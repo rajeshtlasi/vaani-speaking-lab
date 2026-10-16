@@ -1,4 +1,19 @@
-# Vaani — Telugu-first English Speaking Lab
+# Vaani — English for your next chapter
+
+## Professional refinement · 16 October 2026
+
+This update keeps the full 150-lesson Telugu-first curriculum and existing speaking exercises, while introducing:
+
+- A forest-and-cream dashboard with an optimised campus illustration, clear actions and readable bilingual typography.
+- Three complete learning paths: Everyday English (60 lessons), Career conversations (30), and Speak with confidence (30).
+- A global Telugu/English lesson search, accessible dialogs, and Ctrl/Cmd+K shortcut.
+- Curated lesson collections, a practical getting-started guide and a working 15-minute routine.
+- Grouped desktop navigation, a mobile drawer, mobile quick navigation, light/dark appearance, and keyboard focus styles.
+- Honest guest-session progress and clear messages for account or AI features that have not been configured.
+
+The included Netlify functions and Supabase schema are preserved. The private Sites publication runs the frontend in guest mode. It does not run Netlify Functions. Accounts, cross-device progress, saved phrases and AI feedback need the services described below before student launch. Do not assume a configured AI backend from the appearance of the interface.
+
+Automated verification: 15 tests pass, including learner review/save/progress, global search, path filtering, guide navigation, daily routine and the original security checks. Production TypeScript/Vite build passes. Live visual-browser, microphone, real account and live AI checks were unavailable and remain to be completed on real devices.
 
 A React + TypeScript + Vite application for Telugu-speaking B.Tech students. Understand a real situation in Telugu, hear an English response, practise aloud, review, and repeat.
 
@@ -49,7 +64,7 @@ A prebuilt `dist/` is included for convenience. Use a local HTTP server to view 
 
 ## Important status
 
-**The application is built and automated tests pass. It is not deployed to a Netlify account.** No Supabase project, AI key or Netlify account was supplied.
+**The refined frontend is published privately with Sites. It is not deployed to your Netlify account.** No Supabase project, AI key or Netlify account was supplied.
 
 Without configuration, students can explore all content, listen where device voices are available, record/play back where supported, type responses, receive practice review, and see temporary session progress. Guest progress is deliberately not presented as durable storage. Guest history is not automatically imported when signing in.
 
@@ -186,7 +201,9 @@ Reference documentation:
 ## Project map
 
 ```text
-src/App.tsx                 Main learning workspace and admin content UI
+src/App.tsx                 Main learning workspace, search, guide and admin UI
+src/Dashboard.tsx           Refined dashboard, learning paths and collections
+src/refinement.css          Professional responsive visual system
 src/Speaker.tsx             Recording, speech-to-text, playback and review
 src/content.ts              Typed curriculum and 150 initial entries
 src/learning.ts             Transparent metrics and practice suggestions
